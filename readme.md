@@ -40,7 +40,7 @@
 
 > 在本地使用该项目时，不仅可以部署，还可以进行更多的操作，例如查看日志，查看指标，进行多种模式的调试等，这些操作详情可以参考[函数计算组件命令文档](https://github.com/devsapp/fc#%E6%96%87%E6%A1%A3%E7%9B%B8%E5%85%B3) ;
 
-## 项目使用注意事项
+### 项目使用注意事项
 
 1. 项目Yaml中，声明了`actions`， 其对应的命令作用是初始化生成一个 NAS（多次执行， 会复用这个 default 生成的NAS）， 并且将 wordpress 工程上传到 NAS，执行函数的时候， nginx 配置 `root /mnt/auto/Z-Blog;` 指定了 web 的目录在 NAS 上。
 2. 该示例中的 WordPress 默认使用 sqlite 数据库 (位于 NAS)
